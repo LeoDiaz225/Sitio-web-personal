@@ -23,9 +23,23 @@ document.getElementById('contact-form').addEventListener('submit', function (e) 
         return;
     }
 
-    // Si todo está correcto, muestra mensaje de éxito
-    alert('Gracias por tu mensaje. Me pondré en contacto contigo pronto.');
-    document.getElementById('contact-form').reset(); // Limpia el formulario
+    // Si la validación es exitosa, enviar el formulario
+    fetch(this.action, {
+        method: 'POST',
+        body: new FormData(this)
+    })
+    .then(response => {
+        // Mostrar mensaje de éxito
+        alert('¡Mensaje enviado correctamente! Gracias por tu mensaje. Me pondré en contacto contigo pronto.');
+        this.reset(); // Limpia el formulario
+        // Esperar 2 segundos antes de redirigir
+        setTimeout(() => {
+            window.location.href = 'https://leodiaz225.github.io/Sitio-web-personal/';
+        }, 2000);
+    })
+    .catch(error => {
+        alert('Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.');
+    });
 });
 
 // Validación en tiempo real para eliminar caracteres no numéricos
