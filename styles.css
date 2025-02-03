@@ -28,21 +28,18 @@ header {
 }
 */
 header {
-    height: 300px; /* Ajustar el alto según necesites */
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 2rem;
-    font-weight: bold;
     text-align: center;
-    background: linear-gradient(45deg, #001F3F, #003366, #004C99, #0066CC, #0080FF, #3399FF, #66B2FF);
+    background: linear-gradient(45deg, #001F3F, #004C99, #0080FF, #3399FF);
     background-size: 400% 400%;
-    animation: waveColors 8s infinite linear;
+    animation: gradientAnimation 8s infinite linear;
 }
 
-/* Animación de onda de colores */
-@keyframes waveColors {
+@keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
@@ -95,17 +92,15 @@ ul li {
 
 /* Servicios y Portafolio */
 .service, .project {
-    background: #ecf0f1; /* Fondo gris claro */
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .service:hover, .project:hover {
     transform: translateY(-5px);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .service h3, .project h3 {
