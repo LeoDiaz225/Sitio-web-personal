@@ -46,7 +46,7 @@ Error Handling: Alerts users in case of incorrect input.
 
 Clone this repository:
 
-git clone [https://github.com/leodiaz225/Personal-Website.git](https://github.com/LeoDiaz225/Sitio-web-personal.git)
+git clone [https://github.com/leodiaz225/Sitio-web-personal.git](https://github.com/LeoDiaz225/Sitio-web-personal.git)
 
 Open index.html in your browser to view the website.
 
