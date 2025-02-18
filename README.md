@@ -52,6 +52,8 @@ Open index.html in your browser to view the website.
 
 Modify styles.css or scripts.js as needed to customize further.
 
+Or visit: https://leodiaz225.github.io/Sitio-web-personal/
+
 📧 Contact
 
 If you have any questions or suggestions, feel free to reach out!
